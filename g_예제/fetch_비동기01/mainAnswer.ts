@@ -1,6 +1,6 @@
 // mainAnswer.ts
 
-const FetchButton = document.getElementById('fetchUserData');
+const fetchButton = document.getElementById('fetchUserData');
 
 // cf) 지정한 선택자가 해당 문서에 존재하지 않을 경우 null 값 반환
 // : 해당 요소가 존재하지 않을 경우 null값에 대한 오류 방지를 위해
