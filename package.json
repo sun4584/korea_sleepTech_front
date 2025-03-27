@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/devgiants75/korea_sleepTech_front.git"
+    "url": "git+https://github.com/sun4584/korea_sleepTech_front.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/devgiants75/korea_sleepTech_front/issues"
+    "url": "https://github.com/sun4584/korea_sleepTech_front/issues"
   },
-  "homepage": "https://github.com/devgiants75/korea_sleepTech_front#readme"
+  "homepage": "https://github.com/sun4584/korea_sleepTech_front#readme"
 }
