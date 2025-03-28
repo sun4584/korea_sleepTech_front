@@ -47,9 +47,9 @@
     userCard.className = 'user-card';
 
     userCard.innerHTML = `
-    <h2>${user.name}</h2>
-    <p><strong>Username: </strong>${user.username}</p>
-    <p><strong>Email: </strong>${user.email}</p>
+      <h2>${user.name}</h2>
+      <p><strong>Username: </strong> ${user.username}</p>
+      <p><strong>Email: </strong> ${user.email}</p>
     `;
 
     return userCard;
@@ -58,10 +58,10 @@
 
   //# 생성된 카드를 화면에 출력하는 함수
   // @Params: 사용자 배열을 전달
-  const displayUsers = (users: Users) => {
+  const diplayUsers = (users: Users) => {
     const userList = document.getElementById('user-list');
 
-    if(userList){
+    if (userList) {
       userList.innerHTML = '';
 
       users.forEach(user => {
@@ -70,7 +70,7 @@
       })
     }
   }
-  
+
   // 현재 페이지 수를 기본값 1로 설정
   let currentPage = 1;
 
@@ -78,17 +78,17 @@
   const updatePageInfo = () => {
     const pageInfo = document.getElementById('page-info');
 
-    if(pageInfo) {
-      pageInfo.textContent = `page${currentPage}`;
+    if (pageInfo) {
+      pageInfo.textContent = `Page ${currentPage}`;
     }
   }
 
   //# 비동기적으로 데이터를 가져와서 각 페이지별 카드 생성 + 출력하는 함수
-  const loadPage = async(page: number) => {
+  const loadPage = async (page: number) => {
     const users = await fetchUsers(page);
 
     // 현재 페이지에 해당하는 3개(기본값)의 데이터를 displayUsers에 전달
-    displayUsers(users);
+    diplayUsers(users);
 
     updatePageInfo();
   }
@@ -97,10 +97,10 @@
   const addEventListeners = () => {
     const prevPageButton = document.getElementById('prev-page');
     const nextPageButton = document.getElementById('next-page');
-  
-    if(prevPageButton && nextPageButton){
+
+    if (prevPageButton && nextPageButton) {
       prevPageButton.addEventListener('click', () => {
-        if(currentPage > 1){
+        if (currentPage > 1) {
           currentPage--;
           loadPage(currentPage);
         }
@@ -118,5 +118,5 @@
     loadPage(currentPage);
   }
 
-  document.addEventListener("DOMContentLoaded", init);
+  document.addEventListener('DOMContentLoaded', init);
 }
