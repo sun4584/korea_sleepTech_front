@@ -7,9 +7,10 @@ import C_Component from "./C_Component";
 import { Img } from "./C_Component";
 import D_JSX from "./D_JSX";
 import E_JSX from "./E_JSX";
-
+import F_Props from "./F_Props1";
 import G_Props from "./G_Props";
-import F_Props from "./F_props";
+import H_Rendering from "./H_Rendering";
+import I_Handler from "./I_Handler";
 
 const h2Style = {
   backgroundColor: "black",
@@ -43,6 +44,12 @@ function Index() {
       <h2 style={h2Style}>4. Props: 리액트의 데이터 전달(부모/자식)</h2>
       <F_Props />
       <G_Props />
+
+      <h2 style={h2Style}>5. Rendering: 조건부 렌더링</h2>
+      <H_Rendering />
+
+      <h2 style={h2Style}>6. Handler: 리액트의 이벤트 핸들러</h2>
+      <I_Handler />
     </div>
   );
 }
