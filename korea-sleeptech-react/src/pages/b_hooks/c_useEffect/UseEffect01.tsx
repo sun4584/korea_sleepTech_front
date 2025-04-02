@@ -31,6 +31,9 @@ EX) API 호출, 이벤트 리스너 등록, 수동 DOM 조작 등
 
 useEffect(() => {
   - 부수 효과 -
+
+  ? useEffect의 정리 함수
+  : useEffect에서 함수를 return하면 
 }, [의존성배열1, a, b, c]);
 
 VS 이벤트리스너
